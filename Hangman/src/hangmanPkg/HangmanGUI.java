@@ -56,6 +56,23 @@ public class HangmanGUI extends JFrame
 		
 		JPanel hangmanPanel = newHangmanPanel();
 		hangmanPane.add(hangmanPanel, BorderLayout.EAST);
+		{
+			JPanel letterPanel = new JPanel();
+			hangmanPane.add(letterPanel, BorderLayout.WEST);
+			{
+				JLabel triedLetterLabel = new JLabel("");
+				letterPanel.add(triedLetterLabel);
+			}
+		}
+		{
+			JPanel wordPanel = new JPanel();
+			hangmanPane.add(wordPanel, BorderLayout.SOUTH);
+			{
+				JLabel label = new JLabel("_ _ _ _ _ _");
+				label.setFont(new Font("Arial", Font.PLAIN, 25));
+				wordPanel.add(label);
+			}
+		}
 	}
 	
 	// This is the title panel.
