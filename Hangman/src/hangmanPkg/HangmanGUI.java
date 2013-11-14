@@ -17,9 +17,6 @@ public class HangmanGUI extends JFrame
 
 	private JPanel hangmanPane;
 
-	/**
-	 * Launch the application.
-	 */
 	public static void main(String[] args) 
 	{
 		EventQueue.invokeLater(new Runnable() 
@@ -38,9 +35,6 @@ public class HangmanGUI extends JFrame
 		});
 	}
 
-	/**
-	 * Create the frame.
-	 */
 	public HangmanGUI() 
 	{
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
