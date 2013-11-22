@@ -1,0 +1,22 @@
+package hangmanPkg;
+
+import java.util.ArrayList;
+import java.util.Random;
+
+public class WordList {
+	private String[] words = {"this","thath","here","then"};
+
+	public String pickWord() {
+		Random rnd = new Random();
+		String word = words[rnd.nextInt(words.length)];
+		return word;
+	}
+	
+	public ArrayList<String> getWord(String word){
+		ArrayList<String> letters = new ArrayList<String>();
+		for(int i = 0; i<word.length(); i++){
+			letters.add( String.valueOf(word.charAt(i)));
+		}
+		return letters;
+	}
+}//end class
